@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgk1mnxm6ife0"]
+
+[ext_resource type="Texture2D" uid="uid://dswrv173o6pw0" path="res://icon.svg" id="1_1f6kq"]
+
+[sub_resource type="GDScript" id="GDScript_b1ipt"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 120.0
+const JUMP_VELOCITY = -400.0
+
+
+func _physics_process(delta):
+	var direction = Input.get_vector(\"ui_left\", \"ui_right\" , \"ui_up\" , \"ui_down\")
+	
+	velocity = direction * SPEED
+	
+	move_and_slide()
+"
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = SubResource("GDScript_b1ipt")
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_1f6kq")
