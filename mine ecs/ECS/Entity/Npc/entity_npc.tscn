@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://21uwfnxp3rp2"]
+
+[ext_resource type="PackedScene" uid="uid://baw1vp2hhpxfb" path="res://ECS/Entity/Base/entity_base.tscn" id="1_535x4"]
+[ext_resource type="Texture2D" uid="uid://dswrv173o6pw0" path="res://icon.svg" id="2_4r3uy"]
+
+[node name="Npc" instance=ExtResource("1_535x4")]
+numberOfEntities = 10
+
+[node name="Icon" type="Sprite2D" parent="VisualNode" index="0"]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_4r3uy")

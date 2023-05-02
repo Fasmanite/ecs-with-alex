@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bh3mvmtab58yo"]
+
+[ext_resource type="Script" path="res://ECS/ecs.gd" id="1_hi6o1"]
+[ext_resource type="Script" path="res://ECS/EntityHolder.gd" id="2_dbw3t"]
+[ext_resource type="PackedScene" uid="uid://dso8nrv8xl5ik" path="res://ECS/Entity/Tree/entity_tree.tscn" id="3_etrwm"]
+[ext_resource type="PackedScene" uid="uid://21uwfnxp3rp2" path="res://ECS/Entity/Npc/entity_npc.tscn" id="3_mwehp"]
+
+[node name="ECS" type="Node"]
+script = ExtResource("1_hi6o1")
+
+[node name="EntityTypes" type="Node" parent="."]
+
+[node name="Tree" parent="EntityTypes" instance=ExtResource("3_etrwm")]
+
+[node name="Npc" parent="EntityTypes" instance=ExtResource("3_mwehp")]
+visible = false
+
+[node name="EntityHolder" type="Node" parent="."]
+script = ExtResource("2_dbw3t")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="System" type="Node" parent="."]

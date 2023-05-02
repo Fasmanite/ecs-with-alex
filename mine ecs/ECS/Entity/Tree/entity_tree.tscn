@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dso8nrv8xl5ik"]
+
+[ext_resource type="PackedScene" uid="uid://baw1vp2hhpxfb" path="res://ECS/Entity/Base/entity_base.tscn" id="1_1hu07"]
+
+[node name="Tree" instance=ExtResource("1_1hu07")]
+numberOfEntities = 100

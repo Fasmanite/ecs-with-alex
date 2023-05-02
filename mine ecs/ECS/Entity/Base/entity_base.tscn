@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://baw1vp2hhpxfb"]
+
+[ext_resource type="Script" path="res://ECS/Entity/Base/entity_base.gd" id="1_rjbkq"]
+
+[node name="EntityBase" type="Node2D"]
+script = ExtResource("1_rjbkq")
+
+[node name="VisualNode" type="Node2D" parent="."]
