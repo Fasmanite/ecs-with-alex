@@ -9,7 +9,10 @@ script = ExtResource("1_hr7kl")
 
 [node name="ECS" parent="." instance=ExtResource("2_sjtx1")]
 
+[node name="SystemManager" type="Node" parent="."]
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_mg4c4")]
+visible = false
 position = Vector2(318, 300)
 
 [node name="Label" type="Label" parent="."]

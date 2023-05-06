@@ -15,6 +15,10 @@ run/main_scene="res://test.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SystemManager="*res://ECS/Scripts/system_manager.gd"
+
 [input]
 
 ui_left={
