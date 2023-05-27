@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfk222r3tdwpj"]
+
+[ext_resource type="PackedScene" uid="uid://vao7vu5mglii" path="res://character_body_2d.tscn" id="1_20w6m"]
+[ext_resource type="Script" path="res://world.gd" id="1_bctse"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_bctse")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 30
+text = "60
+"
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_20w6m")]
+position = Vector2(581, 271)

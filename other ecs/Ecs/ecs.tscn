@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm3i73jkdssoy"]
+
+[ext_resource type="Script" path="res://Ecs/ecs.gd" id="1_6x6ok"]
+
+[node name="Ecs" type="Node"]
+script = ExtResource("1_6x6ok")

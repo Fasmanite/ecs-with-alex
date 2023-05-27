@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0sr5em055afj"]
+
+[ext_resource type="Script" path="res://Ecs/Systems/position_system.gd" id="1_ftkfk"]
+
+[node name="positionSystem" type="Node"]
+script = ExtResource("1_ftkfk")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
