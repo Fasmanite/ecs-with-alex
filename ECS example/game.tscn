@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bn4n382k6do21"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_e5wvu"]
+[ext_resource type="PackedScene" uid="uid://5ntcpgdwhncc" path="res://ecs/systems/system_texture.tscn" id="2_mwmd6"]
+[ext_resource type="Script" path="res://VisualHolder.gd" id="3_x8b55"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_e5wvu")
+
+[node name="SystemTexture" parent="." instance=ExtResource("2_mwmd6")]
+
+[node name="VisualHolder" type="Node2D" parent="."]
+script = ExtResource("3_x8b55")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1148.0
+offset_bottom = 351.0
+theme_override_font_sizes/font_size = 20
